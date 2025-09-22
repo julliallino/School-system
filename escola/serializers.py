@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from escola.models import Estudante,Curso, Matricula
 from escola.validators import nome_invalido, cpf_invalido, celular_invalido
+
 class EstudanteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Estudante
